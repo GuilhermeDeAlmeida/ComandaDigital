@@ -16,7 +16,9 @@
             android:id="@+id/buttonCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cadastrar" />
+            android:text="Cadastrar"
+            android:background="@drawable/normal_button_border"
+            android:layout_margin="3dp"/>
 
     </LinearLayout>
 
@@ -31,7 +33,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="0dp"
-            android:text="Login" />
+            android:text="Login"
+            android:background="@drawable/normal_button_border"
+            android:layout_margin="3dp"/>
 
     </LinearLayout>
 

@@ -17,8 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/userName"
             android:inputType="textPersonName"
-            android:text="UserName"
             android:textAlignment="center" />
 
         <EditText
@@ -26,15 +26,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/senha"
             android:inputType="textPassword"
-            android:textAlignment="center"
-            tools:text="Password" />
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/normal_button_border"
+            android:text="@string/loginButton" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,15 +49,27 @@
             android:id="@+id/buttonFacebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:text="Facebook" />
+            android:background="@drawable/facebook_button_border"
+            android:text="@string/facebookButton"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginEnd="3dp"
+            tools:ignore="RtlSymmetry"
+            style="@style/Widget.AppCompat.ButtonBar"/>
 
         <Button
             android:id="@+id/buttonGoolge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
             android:layout_weight="1"
-            android:text="Goolge" />
+            android:background="@drawable/google_button_border"
+            android:text="@string/googleButton"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="3dp"
+            style="@style/Widget.AppCompat.ButtonBar"/>
+
     </LinearLayout>
 
 </LinearLayout>
