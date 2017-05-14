@@ -1,13 +1,15 @@
-package comandadigital.com.br.comandadigital;
+package comandadigital.com.br.comandadigital.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import comandadigital.com.br.comandadigital.R;
+
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
     }
 }
