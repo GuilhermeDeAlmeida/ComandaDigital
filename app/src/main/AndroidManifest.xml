@@ -18,7 +18,16 @@
         <activity android:name=".view.Cadastro" />
         <activity android:name=".view.ListaEstabelecimento" />
         <activity android:name=".view.Login" />
-        <activity android:name=".view.SelecaoEstabelecimento"></activity>
+        <activity android:name=".view.SelecaoEstabelecimento" />
+        <activity android:name=".view.SelecaoPagamento" />
+        <activity android:name=".view.SelecaoPedido" />
+        <activity android:name=".view.ParticipantesMesa" />
+        <activity android:name=".view.ValidacaoMesaGestor" />
+        <activity android:name=".view.ValidacaoMesaColaborador" />
+        <activity android:name=".view.DetalheProduto" />
+        <activity android:name=".view.DetalheComanda" />
+        <activity android:name=".view.SelecaoMesa" />
+        <activity android:name=".view.AdicaoParticipante"></activity>
     </application>
 
 </manifest>
