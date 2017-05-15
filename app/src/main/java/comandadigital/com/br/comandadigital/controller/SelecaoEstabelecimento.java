@@ -1,8 +1,8 @@
-package comandadigital.com.br.comandadigital.view;
+package comandadigital.com.br.comandadigital.controller;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -12,20 +12,21 @@ import comandadigital.com.br.comandadigital.R;
 import comandadigital.com.br.comandadigital.adapter.EstabelecimentoAdapter;
 import comandadigital.com.br.comandadigital.model.Estabelecimento;
 
-public class ListaEstabelecimento extends AppCompatActivity {
+public class SelecaoEstabelecimento extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_estabelecimento);
-        ListView listaEstabelecimentos = (ListView)findViewById(R.id.view_lista_estabelecimento);
-        List<Estabelecimento> estabelecimentos = todosOsEstabelecimentos();
-//        ArrayAdapter<Estabelecimento> adapter = new ArrayAdapter<Estabelecimento>(this,android.R.layout.simple_list_item_1, estabelecimentos);
+        setContentView(R.layout.activity_selecao_estabelecimento);
+//        ListView listaEstabelecimentos = (ListView)findViewById(R.id.view_lista_estabelecimento);
+//        List<Estabelecimento> estabelecimentos = todosOsEstabelecimentos();
+//        EstabelecimentoAdapter adapter = new EstabelecimentoAdapter(estabelecimentos, this);
 //        listaEstabelecimentos.setAdapter(adapter);
-        EstabelecimentoAdapter adapter = new EstabelecimentoAdapter(estabelecimentos, this);
-        listaEstabelecimentos.setAdapter(adapter);
     }
-
+    public void exibirMesasEstabelecimentos(){
+        Intent intent = new Intent(SelecaoEstabelecimento.this, SelecaoMesa.class);
+        startActivity(intent);
+    }
     private List<Estabelecimento> todosOsEstabelecimentos() {
         List<Estabelecimento> list = new ArrayList<>();
         Estabelecimento e1 = new Estabelecimento();
@@ -54,5 +55,4 @@ public class ListaEstabelecimento extends AppCompatActivity {
 
         return list;
     }
-
 }

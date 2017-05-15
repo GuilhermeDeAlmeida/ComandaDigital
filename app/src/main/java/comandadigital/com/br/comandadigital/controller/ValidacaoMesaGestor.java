@@ -1,5 +1,6 @@
-package comandadigital.com.br.comandadigital.view;
+package comandadigital.com.br.comandadigital.controller;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -11,5 +12,9 @@ public class ValidacaoMesaGestor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_validacao_mesa_gestor);
+    }
+    public void validar(){
+        Intent intent = new Intent(ValidacaoMesaGestor.this, SelecaoPedido.class);
+        startActivity(intent);
     }
 }

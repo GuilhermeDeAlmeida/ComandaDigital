@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="comandadigital.com.br.comandadigital.view.SelecaoMesa">
+    tools:context="comandadigital.com.br.comandadigital.controller.SelecaoMesa">
 
 </android.support.constraint.ConstraintLayout>

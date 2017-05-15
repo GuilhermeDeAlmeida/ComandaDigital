@@ -8,26 +8,27 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".controller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.Cadastro" />
-        <activity android:name=".view.ListaEstabelecimento" />
-        <activity android:name=".view.Login" />
-        <activity android:name=".view.SelecaoEstabelecimento" />
-        <activity android:name=".view.SelecaoPagamento" />
-        <activity android:name=".view.SelecaoPedido" />
-        <activity android:name=".view.ParticipantesMesa" />
-        <activity android:name=".view.ValidacaoMesaGestor" />
-        <activity android:name=".view.ValidacaoMesaColaborador" />
-        <activity android:name=".view.DetalheProduto" />
-        <activity android:name=".view.DetalheComanda" />
-        <activity android:name=".view.SelecaoMesa" />
-        <activity android:name=".view.AdicaoParticipante"></activity>
+        <activity android:name=".controller.Cadastro" />
+        <activity android:name=".controller.ListaEstabelecimento" />
+        <activity android:name=".controller.Login" />
+        <activity android:name=".controller.SelecaoEstabelecimento" />
+        <activity android:name=".controller.SelecaoPagamento" />
+        <activity android:name=".controller.SelecaoPedido" />
+        <activity android:name=".controller.ParticipantesMesa" />
+        <activity android:name=".controller.ValidacaoMesaGestor" />
+        <activity android:name=".controller.ValidacaoMesaColaborador" />
+        <activity android:name=".controller.DetalheProduto" />
+        <activity android:name=".controller.DetalheComanda" />
+        <activity android:name=".controller.SelecaoMesa" />
+        <activity android:name=".controller.AdicaoParticipante" />
+        <activity android:name=".controller.DetalhePedido"></activity>
     </application>
 
 </manifest>

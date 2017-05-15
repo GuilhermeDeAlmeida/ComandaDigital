@@ -43,7 +43,9 @@
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
             android:background="@drawable/normal_button_border"
+            android:onClick="cadastrar"
             android:text="@string/cadastrarButton" />
     </LinearLayout>
 
@@ -60,6 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/facebook_button_border"
+            android:onClick="cadastrar"
             android:text="@string/facebookButton"
             android:textColor="@android:color/holo_blue_dark" />
 
@@ -70,6 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/google_button_border"
+            android:onClick="cadastrar"
             android:text="@string/googleButton"
             android:textColor="@android:color/holo_red_dark" />
     </LinearLayout>

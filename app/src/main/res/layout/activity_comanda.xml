@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="comandadigital.com.br.comandadigital.view.DetalheComanda">
+    tools:context="comandadigital.com.br.comandadigital.controller.DetalheComanda">
 
 </android.support.constraint.ConstraintLayout>
