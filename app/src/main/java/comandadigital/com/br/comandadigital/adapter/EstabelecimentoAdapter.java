@@ -13,6 +13,8 @@ import java.util.List;
 import comandadigital.com.br.comandadigital.R;
 import comandadigital.com.br.comandadigital.model.Estabelecimento;
 
+import static comandadigital.com.br.comandadigital.R.mipmap.ic_launcher;
+
 /**
  * Created by guilh on 12/05/2017.
  */
@@ -58,7 +60,7 @@ public class EstabelecimentoAdapter extends BaseAdapter{
         nomeEstabelecimento.setText(estabelecimento.getNome());
         endereco.setText(estabelecimento.getEndereço());
         telefone.setText(estabelecimento.getTelefone());
-        imageIcon.setImageResource(R.drawable.cloud);
+        imageIcon.setImageResource(ic_launcher);
 
         return view;
     }

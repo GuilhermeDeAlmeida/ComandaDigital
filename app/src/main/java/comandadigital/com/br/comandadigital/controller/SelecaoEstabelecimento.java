@@ -18,10 +18,11 @@ public class SelecaoEstabelecimento extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao_estabelecimento);
-//        ListView listaEstabelecimentos = (ListView)findViewById(R.id.view_lista_estabelecimento);
-//        List<Estabelecimento> estabelecimentos = todosOsEstabelecimentos();
-//        EstabelecimentoAdapter adapter = new EstabelecimentoAdapter(estabelecimentos, this);
-//        listaEstabelecimentos.setAdapter(adapter);
+        ListView listaEstabelecimentos = (ListView)findViewById(R.id.lista_de_estabelecimento);
+        List<Estabelecimento> estabelecimentos = todosOsEstabelecimentos();
+        EstabelecimentoAdapter adapter = new EstabelecimentoAdapter(estabelecimentos, this);
+        listaEstabelecimentos.setAdapter(adapter);
+
     }
     public void exibirMesasEstabelecimentos(){
         Intent intent = new Intent(SelecaoEstabelecimento.this, SelecaoMesa.class);
