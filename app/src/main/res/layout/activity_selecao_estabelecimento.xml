@@ -10,12 +10,7 @@
         android:layout_weight="0.6"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            app:srcCompat="@mipmap/ic_launcher" />
+       <include layout="@layout/activity_mapa_estebelecimentos"/>
     </LinearLayout>
 
     <LinearLayout
