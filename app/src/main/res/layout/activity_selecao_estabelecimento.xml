@@ -8,9 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.6"
-        android:orientation="vertical">
-
-       <include layout="@layout/activity_mapa_estebelecimentos"/>
+        android:orientation="vertical"
+        android:id="@+id/container">
+        <include layout="@layout/activity_mapa_estebelecimentos"/>
     </LinearLayout>
 
     <LinearLayout

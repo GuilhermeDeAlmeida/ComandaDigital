@@ -9,6 +9,7 @@
     <string name="email">email@email.com</string>
     <string name="logoDescritption">Logotipo da aplicação</string>
     <string name="title_activity_mapa_estebelecimentos">Map</string>
+    <string name="texto_selecao_mesa">Você selecionou a mesa</string>
 
 
 </resources>
