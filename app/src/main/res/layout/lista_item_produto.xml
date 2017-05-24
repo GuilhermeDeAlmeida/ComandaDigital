@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/lista_item_produto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <LinearLayout
+        android:id="@+id/lista_item_produto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.01"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="266dp"
-            android:layout_height="57dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -34,32 +36,34 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="109dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/editTextQtd"
-                    android:layout_width="match_parent"
+                    android:layout_width="33dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:gravity="center"
+                    android:inputType="number"
                     android:text="0" />
 
                 <Button
                     android:id="@+id/buttonMenos"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="-" />
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:text="@string/menos" />
 
                 <Button
                     android:id="@+id/buttonMais"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="+" />
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:clickable="true"
+                    android:text="@string/mais" />
             </LinearLayout>
 
         </LinearLayout>

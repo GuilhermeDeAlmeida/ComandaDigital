@@ -9,7 +9,13 @@
     <string name="email">email@email.com</string>
     <string name="logoDescritption">Logotipo da aplicação</string>
     <string name="title_activity_mapa_estebelecimentos">Map</string>
-    <string name="texto_selecao_mesa">Você selecionou a mesa</string>
+    <string name="menos">-</string>
+    <string name="mais">+</string>
+    <string name="produto">Produto</string>
+    <string name="descricao">Descrição</string>
+    <string name="opcionais">Opcionais</string>
+    <string name="continuarAdicionando">Continuar adicionando</string>
+    <string name="pedido">Pedido</string>
 
 
 </resources>
