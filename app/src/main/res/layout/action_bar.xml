@@ -65,7 +65,7 @@
                             android:layout_marginTop="3dp"
                             android:gravity="center"
                             android:scaleType="fitXY"
-                            android:text="@string/"
+                            android:text="@string/pedido"
                             android:visibility="gone" />
 
                         <TextView

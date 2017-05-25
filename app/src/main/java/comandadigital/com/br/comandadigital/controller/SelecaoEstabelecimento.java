@@ -36,7 +36,7 @@ public class SelecaoEstabelecimento extends AppCompatActivity {
 
     }
     public void exibirMesasEstabelecimentos(){
-        Intent intent = new Intent(SelecaoEstabelecimento.this, SelecaoMesa.class);
+        Intent intent = new Intent(SelecaoEstabelecimento.this, ParticipantesMesa.class);
         startActivity(intent);
     }
     private List<Estabelecimento> todosOsEstabelecimentos() {

@@ -16,6 +16,7 @@
     <string name="opcionais">Opcionais</string>
     <string name="continuarAdicionando">Continuar adicionando</string>
     <string name="pedido">Pedido</string>
+    <string name="botao_adicionar_participante">Adicionar Participantes</string>
 
 
 </resources>

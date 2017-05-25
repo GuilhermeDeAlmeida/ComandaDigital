@@ -26,12 +26,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/texto_selecao_mesa" />
-
-            <TextView
                 android:id="@+id/textViewMesaEQuantidade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -10,4 +10,8 @@ public class Cliente extends Pessoa {
     public void solicitarReserva(){}
     public void alterarPedido(){}
     public void efetuarPedido(){}
+
+    public Cliente() {
+        super();
+    }
 }
