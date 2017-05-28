@@ -35,6 +35,7 @@
         <activity android:name=".controller.SelecaoMesa" />
         <activity android:name=".controller.AdicaoParticipante" />
         <activity android:name=".controller.DetalhePedido" />
+        <activity android:name=".controller.GridProdutos" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

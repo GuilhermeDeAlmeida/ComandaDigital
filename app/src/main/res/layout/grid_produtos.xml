@@ -5,54 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ScrollView
+    <GridView
+        android:id="@+id/grid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <view
-                android:id="@+id/view2"
-                class="android.support.v4.widget.Space"
-                id="@+id/view"
-                layout_width="match_parent"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp" />
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="482dp">
-
-                <LinearLayout
-                    android:id="@+id/dois_itens_produto_grid"
-                    android:layout_width="match_parent"
-                    android:layout_height="288dp"
-                    android:orientation="horizontal">
-
-                    <!--<include layout="@layout/lista_item_produto"/-->
-                    <LinearLayout
-                        android:id="@+id/item_produto_grid"
-                        android:layout_width="195dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:weightSum="1">
-                        <include layout="@layout/grid_item_produto"></include>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-                    </LinearLayout>
-
-                </LinearLayout>
-            </GridLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp" />
 </LinearLayout>

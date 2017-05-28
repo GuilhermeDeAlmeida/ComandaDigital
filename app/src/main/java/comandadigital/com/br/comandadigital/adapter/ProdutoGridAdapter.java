@@ -4,55 +4,63 @@ import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.List;
 
 import comandadigital.com.br.comandadigital.R;
 import comandadigital.com.br.comandadigital.model.ProdutoEstabelecimento;
 
 /**
- * Created by Andressa on 21/05/2017.
+ * Created by Andressa on 28/05/2017.
  */
 
-public class ProdutoAdapter extends BaseAdapter{
+public class ProdutoGridAdapter extends BaseAdapter{
 
     private final List<ProdutoEstabelecimento> produtos;
     private final Activity activity;
 
-    public ProdutoAdapter(List<ProdutoEstabelecimento> produtos, Activity activity) {
+    public ProdutoGridAdapter(List<ProdutoEstabelecimento> produtos, Activity activity) {
         this.produtos = produtos;
         this.activity = activity;
     }
 
     @Override
     public int getCount() {
-        return produtos.size();
-    }
+            return produtos.size();
+        }
 
     @Override
     public Object getItem(int position) {
-        return produtos.get(position);
-    }
+            return produtos.get(position);
+        }
 
     @Override
     public long getItemId(int position) {
-        return 0;
-    }
+            return 0;
+        }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = activity.getLayoutInflater().inflate(R.layout.lista_item_produto, parent, false);
+        View view = activity.getLayoutInflater().inflate(R.layout.grid_item_produto, parent, false);
         ProdutoEstabelecimento produto = produtos.get(position);
 
         TextView nomeProduto = (TextView) view.findViewById(R.id.textViewNomeProduto);
-
         TextView preco = (TextView) view.findViewById(R.id.textViewPrecoProduto);
 
         nomeProduto.setText(produto.getNome());
-        preco.setText("R$ " + produto.getPreco());
+        String pre = limitarCasasDecimais(produto.getPreco());
+        preco.setText("R$ " + pre);
 
         return view;
+    }
+
+    //esse método não pode ficar aqui
+    public String limitarCasasDecimais(BigDecimal valor){
+        DecimalFormat df = new DecimalFormat("0.00");
+        df.format(valor.doubleValue());
+        return "" + valor;
     }
 }
