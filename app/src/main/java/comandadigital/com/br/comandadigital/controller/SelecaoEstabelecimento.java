@@ -22,6 +22,7 @@ public class SelecaoEstabelecimento extends AppCompatActivity {
         setContentView(R.layout.activity_selecao_estabelecimento);
         ListView listaEstabelecimentos = (ListView)findViewById(R.id.lista_de_estabelecimento);
         List<Estabelecimento> estabelecimentos = todosOsEstabelecimentos();
+
         EstabelecimentoAdapter adapter = new EstabelecimentoAdapter(estabelecimentos, this);
         listaEstabelecimentos.setAdapter(adapter);
         listaEstabelecimentos.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -62,6 +62,7 @@ public class EstabelecimentoAdapter extends BaseAdapter{
         telefone.setText(estabelecimento.getTelefone());
         imageIcon.setImageResource(ic_launcher);
 
+
         return view;
     }
 
