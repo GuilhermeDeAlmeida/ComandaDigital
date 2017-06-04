@@ -53,13 +53,16 @@ public class EstabelecimentoAdapter extends BaseAdapter{
 
         TextView endereco = (TextView) view.findViewById(R.id.textViewDistancia);
 
-        TextView telefone = (TextView) view.findViewById(R.id.textViewDescricao);
+        TextView abertura   = (TextView) view.findViewById(R.id.textViewAbertura);
+
+        TextView fechamento = (TextView) view.findViewById(R.id.textViewFechamento);
 
         ImageView imageIcon = (ImageView) view.findViewById(R.id.imageViewIcon);
 
         nomeEstabelecimento.setText(estabelecimento.getNome());
-        endereco.setText(estabelecimento.getEndereço());
-        telefone.setText(estabelecimento.getTelefone());
+        endereco.setText(estabelecimento.getLocalizacao());
+        abertura.setText(estabelecimento.getHorarioAbertura());
+        fechamento.setText(estabelecimento.getHorarioFechamento());
         imageIcon.setImageResource(ic_launcher);
 
 

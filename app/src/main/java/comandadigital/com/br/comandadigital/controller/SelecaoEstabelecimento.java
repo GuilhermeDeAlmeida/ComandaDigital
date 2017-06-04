@@ -46,21 +46,38 @@ public class SelecaoEstabelecimento extends AppCompatActivity {
         Estabelecimento e2 = new Estabelecimento();
         Estabelecimento e3 = new Estabelecimento();
         Estabelecimento e4 = new Estabelecimento();
-        e1.setEndereço("Rua dos loco");
-        e1.setNome("Lojinha");
-        e1.setTelefone("(11)4355-9665");
+        e1.setCodigo("001ABCDGUILHERMEDAORA");
+        e1.setHorarioAbertura("18:30");
+        e1.setHorarioFechamento("23:30");
+        e1.setLatitude("");
+        e1.setLongitude("");
+        e1.setLocalizacao("Rua da Facul, 123");
+        e1.setNome("Guizão Daoras BAR");
 
-        e2.setEndereço("Rua dos normal");
-        e2.setNome("Lojona");
-        e2.setTelefone("(11)4355-9666");
+        e2.setCodigo("002ABCDGUILHERMEDAORA");
+        e2.setHorarioAbertura("8:30");
+        e2.setHorarioFechamento("18:30");
+        e2.setLatitude("");
+        e2.setLongitude("");
+        e2.setNome("Petão do MAL");
+        e2.setLocalizacao("Rua dos diademas, 222");
 
-        e3.setEndereço("Rua dos mais ou menos");
-        e3.setNome("Lojoaria");
-        e3.setTelefone("(11)4355-9667");
+        e3.setCodigo("003ABCDGUILHERMEDAORA");
+        e3.setHorarioAbertura("18:30");
+        e3.setHorarioFechamento("03:30");
+        e3.setLatitude("");
+        e3.setLongitude("");
+        e3.setLocalizacao("Avenida do perigo, 321");
+        e3.setNome("Enrico troxa");
 
-        e4.setEndereço("Rua dos mais normais");
-        e4.setNome("Lojeiro");
-        e4.setTelefone("(11)4355-9668");
+        e4.setCodigo("004ABCDGUILHERMEDAORA");
+        e4.setHorarioAbertura("18:30");
+        e4.setHorarioFechamento("23:30");
+        e4.setLatitude("");
+        e4.setLongitude("");
+        e4.setLocalizacao("São Matheus só por Deus, 554 ");
+        e4.setNome("Dessa a unica responsavel");
+
         list.add(e1);
         list.add(e2);
         list.add(e3);
