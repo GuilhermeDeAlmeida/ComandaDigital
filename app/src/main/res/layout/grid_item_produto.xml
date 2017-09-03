@@ -17,7 +17,7 @@
 
             <LinearLayout
                 android:id="@+id/item_produto_grid"
-                android:layout_width="match_parent"
+                android:layout_width="167dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="1">
@@ -37,7 +37,7 @@
 
                 <TextView
                     android:id="@+id/textViewPrecoProduto"
-                    android:layout_width="match_parent"
+                    android:layout_width="153dp"
                     android:layout_height="wrap_content"
                     android:gravity="right"
                     android:text="R$ 32,90"/>

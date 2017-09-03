@@ -19,7 +19,7 @@
     <string name="botao_adicionar_participante">Adicionar Participantes</string>
     <string name="botao_validar_mesa">Validar mesa</string>
     <string name="botao_recusar">Recusar</string>
-    <string name="texto_dirija_se">Favor dirija-se a mesa mensionada e verifique a reserva</string>
+    <string name="texto_dirija_se">Favor dirija-se a mesa mencionada e verifique a reserva</string>
     <string name="texto_validacao_gestor1">O colaborador</string>
     <string name="texto_validacao_gestor2">recusou uma solicitação</string>
     <string name="texto_validacao_gestor3">vinda da mesa</string>

@@ -7,14 +7,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 import comandadigital.com.br.comandadigital.R;
 import comandadigital.com.br.comandadigital.adapter.ProdutoGridAdapter;
-import comandadigital.com.br.comandadigital.adapter.ProdutoListaAdapter;
-import comandadigital.com.br.comandadigital.model.ProdutoEstabelecimento;
+import comandadigital.com.br.comandadigital.model.Produto;
 
 /**
  * Created by Andressa on 20/05/2017.
@@ -27,7 +25,7 @@ public class GridProdutos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grid_produtos);
         GridView listaProdutos = (GridView)findViewById(R.id.grid);
-        List<ProdutoEstabelecimento> produtos = todosOsProdutos();
+        List<Produto> produtos = todosOsProdutos();
         ProdutoGridAdapter adapter = new ProdutoGridAdapter(produtos, this);
         listaProdutos.setAdapter(adapter);
         listaProdutos.setOnItemClickListener(new GridView.OnItemClickListener(){
@@ -45,20 +43,23 @@ public class GridProdutos extends AppCompatActivity {
     }
 
     //only for test
-    private List<ProdutoEstabelecimento> todosOsProdutos() {
-        List<ProdutoEstabelecimento> list = new ArrayList<>();
-        ProdutoEstabelecimento p1 = new ProdutoEstabelecimento();
-        ProdutoEstabelecimento p2 = new ProdutoEstabelecimento();
-        ProdutoEstabelecimento p3 = new ProdutoEstabelecimento();
+    private List<Produto> todosOsProdutos() {
+        List<Produto> list = new ArrayList<>();
+        Produto p1 = new Produto();
+        Produto p2 = new Produto();
+        Produto p3 = new Produto();
 
-        p1.setNome("Hambúrguer");
-        p1.setPreco(new BigDecimal(29.9));
+        p1.setCodigo(1);
+        p1.setNome("Hambúrguer Especial");
+        p1.setPreco(29.95);
 
+        p2.setCodigo(2);
         p2.setNome("Salada");
-        p2.setPreco(new BigDecimal(8.9));
+        p2.setPreco(8.98);
 
-        p3.setNome("Café");
-        p3.setPreco(new BigDecimal(4.90));
+        p3.setCodigo(3);
+        p3.setNome("Café expresso");
+        p3.setPreco(4.98);
 
 
         list.add(p1);

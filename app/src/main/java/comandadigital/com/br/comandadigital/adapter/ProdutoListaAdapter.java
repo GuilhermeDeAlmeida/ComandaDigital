@@ -4,13 +4,12 @@ import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
 import comandadigital.com.br.comandadigital.R;
-import comandadigital.com.br.comandadigital.model.ProdutoEstabelecimento;
+import comandadigital.com.br.comandadigital.model.Produto;
 
 /**
  * Created by Andressa on 21/05/2017.
@@ -18,10 +17,10 @@ import comandadigital.com.br.comandadigital.model.ProdutoEstabelecimento;
 
 public class ProdutoListaAdapter extends BaseAdapter{
 
-    private final List<ProdutoEstabelecimento> produtos;
+    private final List<Produto> produtos;
     private final Activity activity;
 
-    public ProdutoListaAdapter(List<ProdutoEstabelecimento> produtos, Activity activity) {
+    public ProdutoListaAdapter(List<Produto> produtos, Activity activity) {
         this.produtos = produtos;
         this.activity = activity;
     }
@@ -44,14 +43,14 @@ public class ProdutoListaAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = activity.getLayoutInflater().inflate(R.layout.lista_item_produto, parent, false);
-        ProdutoEstabelecimento produto = produtos.get(position);
+        Produto produto = produtos.get(position);
 
         TextView nomeProduto = (TextView) view.findViewById(R.id.textViewNomeProduto);
 
         TextView preco = (TextView) view.findViewById(R.id.textViewPrecoProduto);
 
         nomeProduto.setText(produto.getNome());
-        preco.setText("R$ " + produto.getPreco());
+        preco.setText("R$ adfgdf" + produto.getPreco());
 
         return view;
     }

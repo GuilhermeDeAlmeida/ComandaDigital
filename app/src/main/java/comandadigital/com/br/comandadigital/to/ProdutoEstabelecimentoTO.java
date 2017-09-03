@@ -1,14 +1,12 @@
-package comandadigital.com.br.comandadigital.model;
+package comandadigital.com.br.comandadigital.to;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
- * Created by guilh on 21/05/2017.
+ * Created by Andressa on 29/05/2017.
  */
 
-public class ProdutoEstabelecimento extends Produto{
-
+public class ProdutoEstabelecimentoTO extends ProdutoTO{
     private Long codigoEstabelecimento;
     /*private Long codigoProduto; */
     private BigDecimal preco;
@@ -44,12 +42,5 @@ public class ProdutoEstabelecimento extends Produto{
 
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
-    }
-
-    public void cadastrarPreco(){
-
-    }
-    public void cadastrarEstoque(){
-
     }
 }

@@ -1,22 +1,20 @@
-package comandadigital.com.br.comandadigital.model;
+package comandadigital.com.br.comandadigital.to;
 
 /**
- * Created by guilh on 21/05/2017.
+ * Created by Andressa on 29/05/2017.
  */
 
-public class Produto {
-
-    private int codigo;
+public class ProdutoTO {
+    private Long codigo;
     private String nome;
     private String descricao;
     private String opcionais;
-    private double preco;
 
-    public int getCodigo() {
+    public Long getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Long codigo) {
         this.codigo = codigo;
     }
 
@@ -26,7 +24,6 @@ public class Produto {
 
     public void setNome(String nome) {
         this.nome = nome;
-
     }
 
     public String getDescricao() {
@@ -44,18 +41,4 @@ public class Produto {
     public void setOpcionais(String opcionais) {
         this.opcionais = opcionais;
     }
-
-    public double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
-
-    public void cadastrar(){}
-
-    public void consultar(){}
-
-    public void alterar(){}
 }

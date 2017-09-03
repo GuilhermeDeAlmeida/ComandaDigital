@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".controller.MainActivity">
+        <activity android:name=".controller.GridProdutos">
             <intent-filter> <!--tag que customiza como a activity será iniciada (acho que dá para colocar o splash aqui) -->
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,14 +28,11 @@
         <activity android:name=".controller.SelecaoPagamento" />
         <activity android:name=".controller.SelecaoPedido" />
         <activity android:name=".controller.ParticipantesMesa" />
-        <activity android:name=".controller.ValidacaoMesaGestor" />
-        <activity android:name=".controller.ValidacaoMesaColaborador" />
         <activity android:name=".controller.DetalheProduto" />
         <activity android:name=".controller.DetalheComanda" />
-        <activity android:name=".controller.SelecaoMesa" />
         <activity android:name=".controller.AdicaoParticipante" />
         <activity android:name=".controller.DetalhePedido" />
-        <activity android:name=".controller.GridProdutos" />
+        <!--<activity android:name=".controller.GridProdutos" />-->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
