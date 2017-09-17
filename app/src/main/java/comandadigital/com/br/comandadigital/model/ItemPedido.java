@@ -5,7 +5,7 @@ package comandadigital.com.br.comandadigital.model;
  */
 
 public class ItemPedido {
-    private Long codigoPorduto;
+    private int codigoProduto;
     private int quantidade;
 
 }

@@ -51,7 +51,7 @@ public class ProdutoGridAdapter extends BaseAdapter{
         TextView preco = (TextView) view.findViewById(R.id.textViewPrecoProduto);
 
         nomeProduto.setText(produto.getNome());
-    String pre = "R$ " + limitarCasasDecimais(produto.getPreco());
+        String pre = "R$ " + limitarCasasDecimais(produto.getPreco());
         preco.setText(pre);
 
         return view;
@@ -59,7 +59,7 @@ public class ProdutoGridAdapter extends BaseAdapter{
 
     //esse método não pode ficar aqui
     public String limitarCasasDecimais(Double valor){
-        DecimalFormat df = new DecimalFormat("#0,00");
+        DecimalFormat df = new DecimalFormat("0,00");
         df.format(valor);
         return "" + valor;
     }

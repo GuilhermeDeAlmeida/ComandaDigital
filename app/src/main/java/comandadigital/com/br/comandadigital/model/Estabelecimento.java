@@ -6,6 +6,13 @@ package comandadigital.com.br.comandadigital.model;
 
 public class Estabelecimento {
     private String nome;
+    private int codigoEstabelecimento;
+    private String latitude;
+    private String longitude;
+    private String codigo;
+    private String localizacao;
+    private String horarioAbertura;
+    private String horarioFechamento;
 
     public String getNome() {
         return nome;
@@ -14,13 +21,6 @@ public class Estabelecimento {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    private String latitude;
-    private String longitude;
-    private String codigo;
-    private String localizacao;
-    private String horarioAbertura;
-    private String horarioFechamento;
 
     public String getLatitude() {
         return latitude;
@@ -60,6 +60,14 @@ public class Estabelecimento {
 
     public void setHorarioFechamento(String horarioFechamento) {
         this.horarioFechamento = horarioFechamento;
+    }
+
+    public int getCodigoEstabelecimento() {
+        return codigoEstabelecimento;
+    }
+
+    public void setCodigoEstabelecimento(int codigoEstabelecimento) {
+        this.codigoEstabelecimento = codigoEstabelecimento;
     }
 
     public String getLocalizacao() {

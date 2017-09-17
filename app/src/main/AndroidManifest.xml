@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".controller.GridProdutos">
+        <activity android:name=".controller.MainActivity">
             <intent-filter> <!--tag que customiza como a activity será iniciada (acho que dá para colocar o splash aqui) -->
                 <action android:name="android.intent.action.MAIN" />
 

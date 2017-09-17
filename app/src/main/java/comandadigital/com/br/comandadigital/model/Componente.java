@@ -5,23 +5,23 @@ package comandadigital.com.br.comandadigital.model;
  */
 
 public class Componente {
-    private int idComponente;
+    private int codigoComponente;
     private String nome;
     private boolean status;
 
-    public Componente(int idComponente, String nome, boolean status) {
+    public Componente(int codigoComponente, String nome, boolean status) {
 
-        this.idComponente = idComponente;
+        this.codigoComponente = codigoComponente;
         this.nome = nome;
         this.status = status;
     }
 
-    public int getIdComponente() {
-        return idComponente;
+    public int getCodigoComponente() {
+        return codigoComponente;
     }
 
-    public void setIdComponente(int idComponente) {
-        this.idComponente = idComponente;
+    public void setCodigoComponente(int codigoComponente) {
+        this.codigoComponente = codigoComponente;
     }
 
     public String getNome() {

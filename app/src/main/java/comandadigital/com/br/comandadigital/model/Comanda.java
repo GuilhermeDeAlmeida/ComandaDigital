@@ -10,8 +10,9 @@ import comandadigital.com.br.comandadigital.util.StatusComanda;
  */
 
 public class Comanda {
-    private Long codigoPedido;
-    private Date dataHora;
+    private Long codigoComanda;
+    private Date dataHoraAbertura;
+    private Date dataHoraFechamento;
     private BigDecimal total;
     private StatusComanda status;
 

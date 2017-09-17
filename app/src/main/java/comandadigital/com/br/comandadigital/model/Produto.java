@@ -1,23 +1,26 @@
 package comandadigital.com.br.comandadigital.model;
 
+import java.util.List;
+
 /**
  * Created by guilh on 21/05/2017.
  */
 
 public class Produto {
 
-    private int codigo;
+    private int codigoProduto;
     private String nome;
     private String descricao;
     private String opcionais;
+    private List<Componente> componentes;
     private double preco;
 
-    public int getCodigo() {
-        return codigo;
+    public int getCodigoProduto() {
+        return codigoProduto;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setCodigoProduto(int codigoProduto) {
+        this.codigoProduto = codigoProduto;
     }
 
     public String getNome() {

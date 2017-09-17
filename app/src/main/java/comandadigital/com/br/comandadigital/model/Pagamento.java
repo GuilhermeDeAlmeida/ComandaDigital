@@ -1,5 +1,7 @@
 package comandadigital.com.br.comandadigital.model;
 
+import java.util.Date;
+
 import comandadigital.com.br.comandadigital.util.FormaDePagamento;
 
 /**
@@ -7,7 +9,10 @@ import comandadigital.com.br.comandadigital.util.FormaDePagamento;
  */
 
 public class Pagamento {
-    private Long codigoCompra;
+    private Long codigoPagamento;
     private FormaDePagamento formaDePagamento;
+    private Date dataHora;
+
+
     public void efetuarPagamento(){}
 }

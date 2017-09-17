@@ -14,26 +14,25 @@
 
     tools:context="comandadigital.com.br.comandadigital.controller.DetalheProduto">
 
-
-
-
     <LinearLayout
-        android:layout_width="386dp"
+        android:layout_width="344dp"
         android:layout_height="219dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="344dp"
-            android:layout_height="216dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24"
             app:srcCompat="@mipmap/ic_launcher" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewProduto"
+        android:id="@+id/textViewCodigoProduto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/produto" />
+        android:text="Código do produto" />
 
     <TextView
         android:id="@+id/textViewNomeProduto"
@@ -48,10 +47,10 @@
         android:text="@string/descricao" />
 
     <TextView
-        android:id="@+id/textViewDescricaoProduto"
+        android:id="@+id/textViewPreco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descrição do produto (valorização e ingredientes)" />
+        android:text="R$ 29,90" />
 
     <TextView
         android:id="@+id/textViewOpcionais"
@@ -62,50 +61,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="87dp"
-        android:layout_weight="1.03"
+        android:layout_weight="0.36"
         android:orientation="horizontal"
         android:weightSum="1">
 
         <LinearLayout
-            android:layout_width="195dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="183dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:weightSum="1">
 
-            <LinearLayout
-                android:id="@+id/opcional"
+            <ListView
+                android:id="@+id/lista_opcionais"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="102dp"
+                android:layout_weight="0.71"
+                android:layout="@layout/lista_item_opcional">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+            </ListView><![CDATA[>
 
-                    <!--Colocar isso em tudo o que for clicável: android:clickable="true" -->
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="153dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:text="Opcional1" />
-                </LinearLayout>
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="22dp"
-                    android:clickable="true"
-                    app:srcCompat="@mipmap/happiness" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
+            ]]>
         </LinearLayout>
 
     </LinearLayout>
@@ -113,7 +88,8 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="21dp"
+        android:layout_weight="0.25"
         android:clickable="true"
         android:text="@string/continuarAdicionando"
         android:textAllCaps="false" />

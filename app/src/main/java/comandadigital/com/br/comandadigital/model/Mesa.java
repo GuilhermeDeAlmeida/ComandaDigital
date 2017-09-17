@@ -8,11 +8,10 @@ import comandadigital.com.br.comandadigital.util.StatusMesa;
 
 public class Mesa {
     private int capacidade;
-    private Long codigoMesa;
+    private int codigoMesa;
     private String finalidade;
     private StatusMesa status;
 
-    public void reservarMesa(){}
     public void selecionarMesa(){}
     public void liberarMesa(){}
     public void avisarTerminoReserva(){}
