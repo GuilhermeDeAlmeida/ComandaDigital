@@ -26,8 +26,9 @@
     <string name="texto_validacao_mesa1">O cliente </string>
     <string name="texto_validacao_mesa2"> solicitou</string>
     <string name="texto_validacao_mesa3">a mesa</string>
-
-
+    <string name="userEmail">Email</string>
+    <string name="capacidade">Capacidade</string>
+    <string name="selecionar_mesa">Confirmar Seleção</string>
 
 
 </resources>

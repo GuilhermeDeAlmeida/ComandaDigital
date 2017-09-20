@@ -8,11 +8,15 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import comandadigital.com.br.comandadigital.R;
 import comandadigital.com.br.comandadigital.adapter.EstabelecimentoAdapter;
 import comandadigital.com.br.comandadigital.model.Estabelecimento;
+import comandadigital.com.br.comandadigital.model.Mesa;
+import comandadigital.com.br.comandadigital.util.StatusMesa;
 
 public class SelecaoEstabelecimento extends AppCompatActivity {
 
@@ -20,28 +24,34 @@ public class SelecaoEstabelecimento extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao_estabelecimento);
+
         ListView listaEstabelecimentos = (ListView)findViewById(R.id.lista_de_estabelecimento);
         List<Estabelecimento> estabelecimentos = todosOsEstabelecimentos();
 
-        EstabelecimentoAdapter adapter = new EstabelecimentoAdapter(estabelecimentos, this);
+        final EstabelecimentoAdapter adapter = new EstabelecimentoAdapter(estabelecimentos, this);
         listaEstabelecimentos.setAdapter(adapter);
         listaEstabelecimentos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-            exibirMesasEstabelecimentos();
+                Estabelecimento estab = (Estabelecimento) adapter.getItem(position);
+                String codigoEstabelecimento = estab.getCodigo();
+                exibirMesasEstabelecimentos(codigoEstabelecimento);
             }
 
         });
 
     }
-    public void exibirMesasEstabelecimentos(){
-        Intent intent = new Intent(SelecaoEstabelecimento.this, ParticipantesMesa.class);
+    public void exibirMesasEstabelecimentos(String codigoEstabelecimento){
+        Intent intent = new Intent(SelecaoEstabelecimento.this, SelecaoMesa.class);
+        intent.putExtra("codigoEstabelecimento",codigoEstabelecimento);
+
         startActivity(intent);
     }
     private List<Estabelecimento> todosOsEstabelecimentos() {
         List<Estabelecimento> list = new ArrayList<>();
+
         Estabelecimento e1 = new Estabelecimento();
         Estabelecimento e2 = new Estabelecimento();
         Estabelecimento e3 = new Estabelecimento();
@@ -85,4 +95,7 @@ public class SelecaoEstabelecimento extends AppCompatActivity {
 
         return list;
     }
+
+
+
 }

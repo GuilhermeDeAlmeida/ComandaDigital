@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107464166632",
+    "firebase_url": "https://comanda-digital-168318.firebaseio.com",
+    "project_id": "comanda-digital-168318",
+    "storage_bucket": "comanda-digital-168318.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107464166632:android:cd3c21934f8ff19c",
+        "android_client_info": {
+          "package_name": "comandadigital.com.br.comandadigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107464166632-loqm501jfi7grveu33m8uc2pjlrv4mct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "comandadigital.com.br.comandadigital",
+            "certificate_hash": "43106c2c92fcb93991c50e86985c37ba4659a8d8"
+          }
+        },
+        {
+          "client_id": "107464166632-jkl66gkfibli04a5aapopaahfa3q04e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG_LS9Fg17fo6wMD9xXMqLAguKgS6I2OQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107464166632-jkl66gkfibli04a5aapopaahfa3q04e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
